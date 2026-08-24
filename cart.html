@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-sc
+    =1.0">
+    <title>CLICON - Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logoTab.svg">
+</head>
+<body>
+
+    <!-- Top Promo Banner -->
+    <div class="top-banner" id="promo-banner">
+        <div class="banner-left">
+            <div class="badge-angle">Black</div>
+            <div class="banner-text-main">Friday</div>
+        </div>
+        <div class="banner-center">
+            <div class="banner-text-sub">Up to <span class="highlight-discount">59%</span> OFF</div>
+        </div>
+        <div class="banner-right">
+            <a href="index.html" class="shop-now-btn" style="text-decoration: none; display: inline-block;">SHOP NOW →</a>
+            <button class="close-banner" onclick="document.getElementById('promo-banner').style.display='none'">✕</button>
+        </div>
+    </div>
+
+    <!-- Secondary Info Bar -->
+    <div class="top-info-bar">
+        <div class="info-left">Welcome to Clicon online eCommerce store.</div>
+        <div class="info-right">
+            <span>Follow us:</span>
+            <div class="socials">
+                <a href="#"><img src="assets/twitter.svg" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="assets/facebook.svg" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="assets/pinterest.svg" alt="Pinterest" class="social-icon"></a>
+                <a href="#"><img src="assets/reddit.svg" alt="Reddit" class="social-icon"></a>
+                <a href="#"><img src="assets/youtube.svg" alt="YouTube" class="social-icon"></a>
+                <a href="#"><img src="assets/instagram.svg" alt="Instagram" class="social-icon"></a>
+            </div>
+            <span class="divider">|</span>
+            <span class="dropdown">Eng ⌄</span>
+            <span class="dropdown">USD ⌄</span>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="header-main">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.svg" alt="CLICON Logo" class="logo-img">
+        </a>
+        <!-- AFTER (New code) -->
+        <form action="search.html" method="GET" class="search-bar">
+            <input type="text" name="q" id="header-search-input" placeholder="Search for anything...">
+            <button type="submit" class="search-btn">
+                <img src="assets/search.svg" alt="Search" class="search-icon">
+            </button>
+        </form>
+        <div class="header-actions">
+            <a href="cart.html" class="cart-icon-wrapper" style="text-decoration: none;">
+                <img src="assets/cart.svg" alt="Cart" class="header-action-icon">
+                <div class="cart-count" id="nav-cart-count">0</div>
+            </a>
+            <div><img src="assets/heart.svg" alt="Wishlist" class="header-action-icon"></div>
+            <div><img src="assets/user.svg" alt="User Profile" class="header-action-icon"></div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-centered-container">
+            <button class="nav-btn-category">All Category ⌄</button>
+            <ul class="nav-links">
+                <li><a href="#"><img src="assets/track-order.svg" alt="Track Order" class="nav-icon"> Track Order</a></li>
+                <li><a href="#"><img src="assets/compare.svg" alt="Compare" class="nav-icon"> Compare</a></li>
+                <li><a href="#"><img src="assets/customer-support.svg" alt="Customer Support" class="nav-icon"> Customer Support</a></li>
+                <li><a href="#"><img src="assets/need-help.svg" alt="Need Help" class="nav-icon"> Need Help</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- VIEWS CONTAINER -->
+    <div class="container">
+        
+        <!-- SHOPPING CART VIEW -->
+        <div id="cart-view" class="cart-page" style="display: block;">
+            <h2 style="margin-bottom: 20px;">Shopping Cart</h2>
+            <div class="cart-layout">
+                <div class="cart-table-wrapper">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Products</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Sub-Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-table-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="cart-totals">
+                    <h3>Card Totals</h3>
+                    <div class="summary-row"><span>Sub-total</span> <span id="summary-subtotal">$0</span></div>
+                    <div class="summary-row"><span>Shipping</span> <span>Free</span></div>
+                    <div class="summary-row"><span>Discount</span> <span id="summary-discount">$0</span></div>
+                    <div class="summary-row"><span>Tax</span> <span id="summary-tax">$0.00</span></div>
+                    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 15px 0;">
+                    <div class="summary-total"><span>Total</span> <span id="summary-total">$0.00 USD</span></div>
+                    <button class="btn-checkout">PROCEED TO CHECKOUT →</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="color:var(--text-gray)">
+                <a href="index.html" class="logo" style="margin-bottom:20px; display: inline-flex;">
+                    <img src="assets/logo-footer.svg" alt="CLICON Logo" class="logo-img" style="filter: brightness(0) saturate(100%) invert(59%) sepia(61%) saturate(1454%) hue-rotate(338deg) brightness(101%) contrast(93%); height: 36px;">
+                </a>
+                <p>Customer Supports:<br><strong style="color:var(--white); font-size:18px;">(629) 555-0129</strong></p>
+                <br>
+                <p>4517 Washington Ave.<br>Manchester, Kentucky 39495</p>
+                <br>
+                <p style="color:var(--white);">info@kinbo.com</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Top Category</h4>
+                <ul>
+                    <li><a href="index.html">Computer & Laptop</a></li>
+                    <li><a href="index.html">SmartPhone</a></li>
+                    <li><a href="index.html">Headphone</a></li>
+                    <li><a href="index.html" style="color:var(--white); font-weight:bold;">— Accessories</a></li>
+                    <li><a href="index.html">Camera & Photo</a></li>
+                    <li><a href="index.html">TV & Homes</a></li>
+                    <li><a href="index.html" style="color:#F3C300;">Browse All Product →</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Shop Product</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Compare</a></li>
+                    <li><a href="#">Track Order</a></li>
+                    <li><a href="#">Customer Help</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Download App</h4>
+                <ul style="display: flex; flex-direction: column; gap: 10px;">
+                    <li>
+                        <button style="background:#303639; color:white; padding:10px 16px; border-radius:4px; width:100%; display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <img src="assets/playstore.svg" alt="Google Play" style="width: 24px; height: 24px; object-fit: contain;">
+                            <div style="text-align: left; line-height: 1.2;">
+                                <span style="font-size: 10px; color: var(--text-gray);">Get it now</span><br>
+                                <strong style="font-size: 14px;">Google Play</strong>
+                            </div>
+                        </button>
+                    </li>
+                    <li>
+                        <button style="background:#303639; color:white; padding:10px 16px; border-radius:4px; width:100%; display: flex; align-items: center; gap: 12px; cursor: pointer;">
+                            <img src="assets/apple.svg" alt="App Store" style="width: 24px; height: 24px; object-fit: contain; filter: brightness(0) invert(1);">
+                            <div style="text-align: left; line-height: 1.2;">
+                                <span style="font-size: 10px; color: var(--text-gray);">Get it now</span><br>
+                                <strong style="font-size: 14px;">App Store</strong>
+                            </div>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Popular Tag</h4>
+                <div style="display:flex; flex-wrap:wrap; gap:8px;">
+                    <a href="#" class="footer-tag">Game</a>
+                    <a href="#" class="footer-tag">iPhone</a>
+                    <a href="#" class="footer-tag">TV</a>
+                    <a href="#" class="footer-tag">Macbook</a>
+                    <a href="#" class="footer-tag">SSD</a>
+                </div>
+            </div>
+        
+        <div class="footer-bottom">
+            Kinbo - eCommerce Template © 2026. Design by Templatecookie
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
